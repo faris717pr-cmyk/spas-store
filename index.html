@@ -15,32 +15,71 @@
       color: white;
       text-align: center;
     }
+
     header {
       padding: 20px;
       font-size: 30px;
       font-weight: bold;
       background: #020617;
     }
+
     .products {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
       padding: 30px;
     }
+
     .card {
       background: #020617;
       padding: 20px;
-      border-radius: 12px;
+      border-radius: 14px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+      transition: transform 0.2s;
     }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      margin: 10px 0 5px;
+    }
+
+    .card p {
+      opacity: 0.8;
+      font-size: 14px;
+      margin: 5px 0;
+    }
+
+    .price {
+      font-size: 20px;
+      font-weight: bold;
+      color: #22c55e;
+      margin: 10px 0;
+    }
+
     button {
-      margin-top: 10px;
-      padding: 10px;
+      margin-top: 15px;
+      padding: 12px;
       width: 100%;
       border: none;
-      border-radius: 8px;
+      border-radius: 10px;
       background: #22c55e;
       font-size: 16px;
       cursor: pointer;
+      color: black;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background: #16a34a;
     }
   </style>
 </head>
@@ -50,27 +89,35 @@
 <header>SPAS Store</header>
 
 <div class="products">
+
+  <!-- منتج 1 -->
   <div class="card">
+    <img src="https://via.placeholder.com/400x250?text=Robux" alt="Robux">
     <h3>100 روبوكس</h3>
     <p>تسليم سريع</p>
+    <div class="price">10 ريال</div>
     <button onclick="location.href='https://discord.gg/'">شراء</button>
   </div>
 
+  <!-- منتج 2 -->
   <div class="card">
+    <img src="https://via.placeholder.com/400x250?text=VIP" alt="VIP">
     <h3>رتبة VIP</h3>
     <p>داخل السيرفر</p>
+    <div class="price">25 ريال</div>
     <button onclick="location.href='https://discord.gg/'">شراء</button>
   </div>
 
+  <!-- منتج 3 -->
   <div class="card">
+    <img src="https://via.placeholder.com/400x250?text=Gamepass" alt="Gamepass">
     <h3>Gamepass</h3>
     <p>روبلكس</p>
+    <div class="price">15 ريال</div>
     <button onclick="location.href='https://discord.gg/'">شراء</button>
   </div>
+
 </div>
 
 </body>
 </html>
-
-
-
